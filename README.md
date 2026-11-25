@@ -8,6 +8,7 @@ A web-based automotive spare-parts management application built with React, Type
 - Add-parts functionality
 - Vehicle API
 - PostgreSQL database integration
+- AI-assisted functionality
 
 ## Requirements
 - Node.js and npm
@@ -26,5 +27,4 @@ A web-based automotive spare-parts management application built with React, Type
 ## Production build
 Run npm run build.
 
-## Future development
-AI-assisted functionality is planned for a future version and is not included in this publication.
+
