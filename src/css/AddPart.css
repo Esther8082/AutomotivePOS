@@ -1,0 +1,624 @@
+
+/* =========================================
+   ADD PART PAGE
+========================================= */
+
+.add-part-page {
+  width: 100%;
+  padding: 24px;
+  color: #1f2937;
+  box-sizing: border-box;
+}
+
+.add-part-header {
+  margin-bottom: 25px;
+}
+
+.ap-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 18px;
+}
+
+.ap-back-button:hover {
+  color: #dc2626;
+}
+
+.ap-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ap-heading-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ap-eyebrow {
+  color: #dc2626;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 5px;
+}
+
+.ap-heading h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.ap-heading p:last-child {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.ap-message {
+  padding: 13px 16px;
+  border-radius: 7px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ap-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.ap-success {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.ap-loading {
+  padding: 35px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.add-part-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ap-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 23px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.025);
+}
+
+.ap-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ap-section-heading > span {
+  width: 31px;
+  height: 31px;
+  min-width: 31px;
+  border-radius: 7px;
+  background: #fef2f2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ap-section-heading h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.ap-section-heading p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.ap-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.ap-three-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ap-full-width {
+  grid-column: 1 / -1;
+}
+
+.ap-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ap-field > span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.ap-field input,
+.ap-field select,
+.ap-field textarea {
+  width: 100%;
+  min-height: 43px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #dbe2ea;
+  border-radius: 6px;
+  outline: none;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ap-field textarea {
+  resize: vertical;
+  min-height: 85px;
+}
+
+.ap-field input:focus,
+.ap-field select:focus,
+.ap-field textarea:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.08);
+}
+
+.ap-field input::placeholder,
+.ap-field textarea::placeholder {
+  color: #a1aab8;
+}
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.ap-image-area {
+  width: 100%;
+}
+
+.ap-upload-box {
+  min-height: 175px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #64748b;
+  background: #f8fafc;
+  transition: all 0.2s;
+}
+
+.ap-upload-box:hover {
+  border-color: #dc2626;
+  background: #fffafa;
+  color: #dc2626;
+}
+
+.ap-upload-box strong {
+  font-size: 13px;
+}
+
+.ap-upload-box span {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.ap-upload-box input {
+  display: none;
+}
+
+.ap-image-preview {
+  position: relative;
+  width: 190px;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.ap-image-preview img {
+  width: 100%;
+  height: 145px;
+  object-fit: contain;
+}
+
+.ap-image-preview p {
+  font-size: 11px;
+  color: #64748b;
+  overflow-wrap: anywhere;
+  margin: 8px 0 0;
+}
+
+.ap-remove-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.ap-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0 10px;
+}
+
+.ap-cancel-button,
+.ap-save-button {
+  min-height: 43px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  transition: all 0.2s;
+}
+
+.ap-cancel-button {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+}
+
+.ap-cancel-button:hover {
+  background: #f1f5f9;
+}
+
+.ap-save-button {
+  border: 1px solid #dc2626;
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.ap-save-button:hover {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+.ap-save-button:disabled,
+.ap-cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+  .ap-three-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .add-part-page {
+    padding: 14px;
+  }
+
+  .ap-section {
+    padding: 16px;
+  }
+
+  .ap-form-grid,
+  .ap-three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-heading h1 {
+    font-size: 21px;
+  }
+
+  .ap-form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .ap-cancel-button,
+  .ap-save-button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   VEHICLE COMPATIBILITY
+========================================= */
+
+.ap-vehicle-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 15px;
+  margin-bottom: 22px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #dc2626;
+}
+
+.ap-vehicle-intro > div {
+  flex: 1;
+}
+
+.ap-vehicle-intro strong {
+  display: block;
+  color: #1e293b;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.ap-vehicle-intro p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ap-vehicle-grid {
+  margin-bottom: 18px;
+}
+
+.ap-field-help {
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.ap-field select:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.ap-add-vehicle-action {
+  display: flex;
+  justify-content: flex-start;
+  margin: 8px 0 25px;
+}
+
+.ap-add-vehicle-button {
+  min-height: 40px;
+  padding: 0 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #dc2626;
+  border-radius: 6px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ap-add-vehicle-button:hover:not(:disabled) {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+.ap-add-vehicle-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   SELECTED COMPATIBLE VEHICLES
+========================================= */
+
+.ap-compatible-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ap-compatible-heading {
+  min-height: 48px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ap-compatible-heading h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: #334155;
+}
+
+.ap-compatible-heading > span {
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.ap-empty-vehicles {
+  min-height: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.ap-empty-vehicles p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.ap-empty-vehicles small {
+  font-size: 11px;
+}
+
+.ap-compatible-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.ap-compatible-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ap-compatible-item:last-child {
+  border-bottom: none;
+}
+
+.ap-compatible-icon {
+  width: 37px;
+  height: 37px;
+  min-width: 37px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.ap-compatible-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ap-compatible-info strong {
+  font-size: 12px;
+  color: #1e293b;
+  overflow-wrap: anywhere;
+}
+
+.ap-compatible-info span {
+  font-size: 11px;
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+.ap-delete-vehicle {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fff;
+  color: #dc2626;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ap-delete-vehicle:hover {
+  background: #fef2f2;
+  border-color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .ap-compatible-heading {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .ap-compatible-item {
+    padding: 12px;
+  }
+
+  .ap-add-vehicle-button {
+    width: 100%;
+  }
+}

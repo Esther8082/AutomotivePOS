@@ -1,0 +1,364 @@
+.part-search-page {
+  min-height: 100vh;
+  background-color: #f6f7fb;
+  color: #182033;
+  padding: 20px 24px 40px;
+  position: relative;
+}
+
+.part-search-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+/* LEFT PANEL: YOUR VEHICLE */
+.ps-vehicle-panel {
+  background-color: #ffffff;
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.ps-vehicle-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.ps-vehicle-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ps-clear-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1b369c;
+  cursor: pointer;
+}
+
+.ps-clear-btn:hover {
+  text-decoration: underline;
+}
+
+.ps-api-error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 14px;
+}
+
+.ps-field-group {
+  margin-bottom: 14px;
+}
+
+.ps-field-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.ps-make-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1.5px solid #9ad3b0;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.ps-make-select {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  text-transform: uppercase;
+}
+
+.ps-make-clear {
+  background: none;
+  border: none;
+  color: #6b7280;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.ps-make-clear:hover {
+  color: #111827;
+}
+
+.ps-select {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #1f2937;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.ps-select:focus {
+  border-color: #16288a;
+}
+
+.ps-select:disabled {
+  background-color: #f9fafb;
+  color: #9ca3af;
+}
+
+.ps-progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.ps-progress-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.ps-progress-track {
+  flex: 1;
+  height: 4px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.ps-progress-fill {
+  height: 100%;
+  background-color: #16288a;
+  border-radius: 9999px;
+  transition: width 0.2s ease;
+}
+
+.ps-find-btn {
+  width: 100%;
+  background-color: #16288a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.ps-find-btn:hover {
+  background-color: #111f6c;
+}
+
+.ps-garage-btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ps-garage-btn.is-ready {
+  background-color: #eef2ff;
+  color: #16288a;
+  border-color: #c7d2fe;
+}
+
+.ps-garage-note {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #4b5563;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+/* RIGHT PANEL: BROWSE BY DEPARTMENT */
+.ps-departments-panel {
+  background-color: #ffffff;
+  border: 1px solid #e3e7ef;
+  border-radius: 12px;
+  padding: 20px 24px 24px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.ps-departments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.ps-departments-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ps-active-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: #16288a;
+  background-color: #eef2ff;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.ps-departments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ps-department-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px 16px 16px;
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.ps-department-card:hover {
+  border-color: #93a5e8;
+  box-shadow: 0 4px 12px rgba(22, 40, 138, 0.06);
+  transform: translateY(-1px);
+}
+
+.ps-department-card.is-selected {
+  border: 1.5px solid #16288a;
+  box-shadow: 0 0 0 1px rgba(22, 40, 138, 0.12);
+}
+
+.ps-card-arrow {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  color: #6b7280;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ps-card-icon {
+  color: #6f7c9b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ps-department-card.is-selected .ps-card-icon {
+  color: #16288a;
+}
+
+.ps-card-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.ps-department-card.is-selected .ps-card-name {
+  color: #16288a;
+  font-weight: 700;
+}
+
+/* FLOATING TOURS BUTTON */
+.ps-tours-btn {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  background-color: #16288a;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 6px 18px rgba(22, 40, 138, 0.28);
+  cursor: pointer;
+}
+
+.ps-tours-btn:hover {
+  background-color: #111f6c;
+}
+
+@media (max-width: 1180px) {
+  .ps-departments-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .part-search-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ps-departments-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
